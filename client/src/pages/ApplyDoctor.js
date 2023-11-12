@@ -4,8 +4,8 @@ import { Col, Form, Input, Row, TimePicker , message} from "antd";
 import { useDispatch, useSelector} from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import {showLoading,hideLoading} from '../redux/features/alertSlice'
-
 import axios from 'axios'
+
 const ApplyDoctor = () => {
     
     const {user} = useSelector(state => state.user)
