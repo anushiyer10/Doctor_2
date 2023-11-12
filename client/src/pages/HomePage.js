@@ -10,8 +10,8 @@ const HomePage = () => {
         "/api/v1/user/getUserData",
         {},
         {
-          haeders : {
-            Authorization : "Bearer" + localStorage.getItem("token"),
+          headers : {
+            authorization : "Bearer " + localStorage.getItem("token"),
           },
         }
       );

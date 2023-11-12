@@ -13,7 +13,7 @@ const Layout = ({ children }) => {
     const handleLogout = () => {
         localStorage.clear();
         message.success("Logout Successfully");
-        navigate("/login");
+        navigate("/");
     }
 
     const SidebarMenu = user?.isAdmin ? adminMenu : userMenu;
@@ -40,7 +40,7 @@ const Layout = ({ children }) => {
                         })}
                         <div className={`menu-item `} onClick={handleLogout}>
                                     <i className="fa-solid fa-right-from-bracket"></i>
-                                    <Link to="/login">Logout</Link>
+                                    <Link to="/">Logout</Link>
                                 </div>
                     </div>
                 </div>
