@@ -18,7 +18,7 @@ function App() {
       <Spinner />
       ) : (
         <Routes>
-          <Route path="/" 
+          <Route path="/home" 
           element={
             <ProtectedRoute>
               <HomePage />
@@ -31,7 +31,7 @@ function App() {
               <ApplyDoctor />
             </ProtectedRoute>
           } />
-          <Route path="/login" 
+          <Route path="/" 
           element={
           <PublicRoute>
               <Login />
