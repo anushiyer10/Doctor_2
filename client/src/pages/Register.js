@@ -16,7 +16,7 @@ const Register = () => {
       dispatch(hideLoading());
       if (res.data.success) {
         message.success("Register Successfully!");
-        navigate("/login");
+        navigate("/");
       } else {
         message.error(res.data.message);
       }
@@ -44,7 +44,7 @@ const Register = () => {
           <Form.Item label="Password" name="password">
             <Input type="password" required />
           </Form.Item>
-          <Link to="/login" className="m-2">
+          <Link to="/" className="m-2">
             Already user login here
           </Link>
           <button className="btn btn-primary" type="submit">
