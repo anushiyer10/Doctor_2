@@ -32,7 +32,7 @@ export default function ProtectedRoute({ children}) {
             localStorage.clear();
             console.log(error);
         }
-    }
+    };
 
     useEffect(() => {
         if (!user) {

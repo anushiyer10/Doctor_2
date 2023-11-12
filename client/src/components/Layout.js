@@ -6,7 +6,7 @@ import { useSelector } from "react-redux";
 import {message} from "antd";
 
 const Layout = ({ children }) => {
-    const {user } = useSelector(state => state.user);
+    const {user} = useSelector(state => state.user);
     const location = useLocation();
     const navigate = useNavigate();
 
@@ -48,7 +48,7 @@ const Layout = ({ children }) => {
                 <div className="header">
                     <div className="header-content">
                         <i class="fa-solid fa-bell"></i>
-                        <Link to="/profile">{user.name}</Link>
+                        <Link to="/profile">{user?.name}</Link>
                     </div>
                 </div>
                 <div className="body">{children}</div>

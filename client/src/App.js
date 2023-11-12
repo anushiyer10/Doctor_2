@@ -9,7 +9,8 @@ import PublicRoute from "./components/PublicRoute";
 import ApplyDoctor from "./pages/ApplyDoctor";
 
 function App() {
-  const {loading} = useSelector(state.alerts)
+  const {loading} = useSelector((state) => state.alerts) || {}
+  
   return (
     <>
       <BrowserRouter>
@@ -22,7 +23,8 @@ function App() {
             <ProtectedRoute>
               <HomePage />
             </ProtectedRoute>
-          } />
+          } 
+          />
           <Route path="/apply-doctor" 
           element={
             <ProtectedRoute>
